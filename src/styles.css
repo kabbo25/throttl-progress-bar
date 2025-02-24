@@ -1,0 +1,39 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.add-button {
+  margin-bottom: 20px;
+}
+.progressbar-container {
+  border: 1px solid black;
+  margin: 0px 30px;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 20px;
+  margin-bottom: 20px;
+}
+
+.progress-bar {
+  width: 0%;
+  height: 100%;
+  background-color: green;
+  position: relative;
+}
+.active {
+  animation: slide-in 3s linear 1s forwards;
+}
+.progress-text {
+  position: absolute;
+  left: 10px;
+  color: black;
+}
+
+@keyframes slide-in {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
